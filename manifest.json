@@ -3,7 +3,7 @@
     "short_name": "WatchApp",
     "start_url": ".",
     "background_color": "#F4F6F9",
-    "theme_color": "#F4F6F9,
+    "theme_color": "#F4F6F9",
     "display": "standalone",
     "icons": [
         {
