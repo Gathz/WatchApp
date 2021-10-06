@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WatchApp - Rewatch</title>
+        <meta name="description" content="WatchApp" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+        <link rel="manifest" href="./manifest.json">
+        <meta name="author" content="Gathz" />
+        <meta name="theme-color" content="#F4F6F9" />
+        <link rel="apple-touch-icon" sizes="32x32" href="./assets/images/icons/icon-32x32.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/icons/icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/images/icons/icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/icons/icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./assets/images/icons/icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="./assets/images/icons/icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/icons/icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="./assets/images/icons/icon-192x192.png">
+        <link rel="apple-touch-icon" sizes="196x196" href="./assets/images/icons/icon-196x196.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="./assets/images/icons/icon-512x512.png">
+        <!-- <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" id="light-scheme-icon"/> -->
+        <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon-2.svg" id="dark-scheme-icon"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="stylesheet" type="text/css" href="./assets/css/frontend.min.css">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;700&family=Fjalla+One&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Google Tag Manager -->
+        <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WLG4R5V');</script> -->
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLG4R5V"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="canvasArea">
+            <header class="header">
+                <nav class="header-navigation">
+                    <ul>
+                        <li class="active"><a href="/film.html">Film</a></li>
+                        <li><a class="generatorMenu" href="/serie.html">Serie</a></li>
+                    </ul>
+                    <a id="darkMode" class="header--themeMode" href="javascript:void(0);">
+
+                        <div class="svg">
+                            <svg class="svg--element lightMode" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                <path class="Fill(XII)" d="M32.5,19.8c7,0,12.7,5.7,12.7,12.7s-5.7,12.7-12.7,12.7s-12.7-5.7-12.7-12.7S25.5,19.8,32.5,19.8
+                                     M32.5,13.8c-10.3,0-18.7,8.4-18.7,18.7s8.4,18.7,18.7,18.7s18.7-8.4,18.7-18.7S42.8,13.8,32.5,13.8L32.5,13.8z"/>
+                                <path class="Fill(XII)" d="M32.5,11.3c-1.7,0-3-1.3-3-3v-3c0-1.7,1.3-3,3-3s3,1.3,3,3v3C35.5,10,34.2,11.3,32.5,11.3z"/>
+                                <path class="Fill(XII)" d="M32.5,62.7c-1.7,0-3-1.3-3-3v-3c0-1.7,1.3-3,3-3s3,1.3,3,3v3C35.5,61.3,34.2,62.7,32.5,62.7z"/>
+                                <path class="Fill(XII)" d="M15.4,18.4c-0.8,0-1.5-0.3-2.1-0.9l-2.1-2.1c-1.2-1.2-1.2-3.1,0-4.2c1.2-1.2,3.1-1.2,4.2,0l2.1,2.1
+                                    c1.2,1.2,1.2,3.1,0,4.2C16.9,18.1,16.2,18.4,15.4,18.4z"/>
+                                <path class="Fill(XII)" d="M51.7,54.7c-0.8,0-1.5-0.3-2.1-0.9l-2.1-2.1c-1.2-1.2-1.2-3.1,0-4.2c1.2-1.2,3.1-1.2,4.2,0l2.1,2.1
+                                    c1.2,1.2,1.2,3.1,0,4.2C53.2,54.4,52.5,54.7,51.7,54.7z"/>
+                                <path class="Fill(XII)" d="M8.3,35.5h-3c-1.7,0-3-1.3-3-3s1.3-3,3-3h3c1.7,0,3,1.3,3,3S10,35.5,8.3,35.5z"/>
+                                <path class="Fill(XII)" d="M59.7,35.5h-3c-1.7,0-3-1.3-3-3s1.3-3,3-3h3c1.7,0,3,1.3,3,3S61.3,35.5,59.7,35.5z"/>
+                                <path class="Fill(XII)" d="M13.3,54.7c-0.8,0-1.5-0.3-2.1-0.9c-1.2-1.2-1.2-3.1,0-4.2l2.1-2.1c1.2-1.2,3.1-1.2,4.2,0
+                                    c1.2,1.2,1.2,3.1,0,4.2l-2.1,2.1C14.8,54.4,14.1,54.7,13.3,54.7z"/>
+                                <path class="Fill(XII)" d="M49.6,18.4c-0.8,0-1.5-0.3-2.1-0.9c-1.2-1.2-1.2-3.1,0-4.2l2.1-2.1c1.2-1.2,3.1-1.2,4.2,0
+                                    c1.2,1.2,1.2,3.1,0,4.2l-2.1,2.1C51.1,18.1,50.4,18.4,49.6,18.4z"/>
+                            </svg>
+
+                            <svg version="1.1" class="svg--element darkMode" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                <path class="Fill(XII)" d="M53.5,12.4h-1.8v-1.8c0-0.9-0.7-1.6-1.6-1.6s-1.6,0.7-1.6,1.6v1.8h-1.8c-0.9,0-1.6,0.7-1.6,1.6
+                                    s0.7,1.6,1.6,1.6h1.8v1.8c0,0.9,0.7,1.6,1.6,1.6s1.6-0.7,1.6-1.6v-1.8h1.8c0.9,0,1.6-0.7,1.6-1.6S54.4,12.4,53.5,12.4z"/>
+                                <path class="Fill(XII)" d="M15.9,50.9h-1.8v-1.8c0-0.9-0.7-1.6-1.6-1.6s-1.6,0.7-1.6,1.6v1.8H9c-0.9,0-1.6,0.7-1.6,1.6
+                                    s0.7,1.6,1.6,1.6h1.8v1.8c0,0.9,0.7,1.6,1.6,1.6s1.6-0.7,1.6-1.6v-1.8h1.8c0.9,0,1.6-0.7,1.6-1.6S16.8,50.9,15.9,50.9z"/>
+                                <path class="Fill(XII)" d="M32.5,51.1c-0.8,0-1.6,0-2.4-0.1c-8.4-1-15.2-7.9-16.2-16.2c-1-8.3,3.5-16.1,11.1-19.5
+                                    c1.4-0.6,2.9-0.4,4.1,0.5c1.2,0.9,1.8,2.4,1.6,3.9c-0.1,0.6-0.1,1.2-0.1,1.9c0,7.1,5.8,12.9,12.9,12.9c0.6,0,1.2,0,1.7-0.1
+                                    c1.5-0.2,3,0.4,3.9,1.6c0.9,1.2,1.1,2.8,0.5,4.1C46.5,46.8,39.8,51.1,32.5,51.1z M24.8,22c-3.7,2.7-5.7,7.2-5.1,12
+                                    c0.7,5.8,5.4,10.5,11.1,11.2c4.7,0.6,9.2-1.4,11.9-5C33,39.8,25.1,31.8,24.8,22z"/>
+                            </svg>
+                        </div>
+
+                    </a>
+                </nav>
+            </header>
+
+            <section class="filter">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <form id="formSearchFilter" class="form-inline">
+                                <span id="clearFilter">
+                                    <div class="svg">
+                                        <svg version="1.1" class="svg--element" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                            <path class="Fill(XII)" d="M12.8,10l3.8-3.8c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L10,7.2L6.2,3.3c-0.8-0.8-2-0.8-2.8,0
+                                                c-0.8,0.8-0.8,2,0,2.8L7.2,10l-3.8,3.8c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.8-3.8l3.8,3.8
+                                                c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L12.8,10z"/>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <input id="myInput" class="search form-control mr-sm-2" type="text" placeholder="Cerca il film" style="width: 100%;" />
+
+                            </form>
+                            <button id="sortDataAlphabetical" class="filterBtn" type="button" name="button">
+                                <div class="svg">
+                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                        <path class="Fill(XII)" d="M13,12.9c0-0.1-0.1-0.1-0.1-0.2c-0.1-0.1-0.1-0.2-0.2-0.2c-0.1-0.1-0.1-0.1-0.2-0.2c-0.1,0-0.1-0.1-0.2-0.1c0,0,0,0,0,0
+                                    		c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.2,0-0.3,0.1c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.1,0.1
+                                    		c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0.1-0.1,0.2-0.2,0.2c0,0.1-0.1,0.1-0.1,0.2l-4,9.2c-0.3,0.6,0,1.4,0.7,1.7c0.2,0.1,0.3,0.1,0.5,0.1
+                                    		c0.5,0,1-0.3,1.2-0.8l0.5-1.2h4.6l0.5,1.2c0.2,0.5,0.7,0.8,1.2,0.8c0.2,0,0.3,0,0.5-0.1c0.6-0.3,0.9-1,0.7-1.7L13,12.9z M10.6,19.3
+                                    		l1.2-2.7l1.2,2.7H10.6z"/>
+                                    	<path class="Fill(XII)" d="M28.2,20.9h-4.8l5.8-6.2c0,0,0.1-0.1,0.1-0.2c0.1-0.1,0.1-0.1,0.1-0.2c0-0.1,0-0.2,0.1-0.3c0-0.1,0-0.1,0-0.2c0,0,0,0,0,0
+                                    		c0-0.1,0-0.2-0.1-0.3c0-0.1,0-0.1,0-0.2c0-0.1-0.1-0.1-0.1-0.2c-0.1-0.1-0.1-0.2-0.2-0.2c0,0,0,0,0,0c0,0-0.1-0.1-0.2-0.1
+                                    		c-0.1-0.1-0.2-0.1-0.2-0.1c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.1,0-0.2,0h-7.8c-0.7,0-1.3,0.6-1.3,1.3s0.6,1.3,1.3,1.3h4.8l-5.8,6.2
+                                    		c0,0.1-0.1,0.1-0.1,0.2c-0.1,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.2-0.1,0.3c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0c0,0.1,0,0.2,0.1,0.3
+                                    		c0,0.1,0,0.1,0,0.2c0,0.1,0.1,0.1,0.1,0.2c0.1,0.1,0.1,0.2,0.2,0.2c0,0,0,0,0,0c0.1,0.1,0.1,0.1,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1
+                                    		c0.2,0.1,0.3,0.1,0.5,0.1h7.8c0.7,0,1.3-0.6,1.3-1.3S28.9,20.9,28.2,20.9z"/>
+                                     </svg>
+                                </div>
+                            </button>
+                            <button id="sortDataTimestamp" class="filterBtn d-none" type="button" name="button">
+                                <div class="svg">
+                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                        <path class="Fill(XII)" d="M22.9,11.8L22.9,11.8l0-1.1c0-0.7-0.6-1.3-1.3-1.3s-1.3,0.6-1.3,1.3v1.1h-4.6v-1.1c0-0.7-0.6-1.3-1.3-1.3s-1.3,0.6-1.3,1.3
+                                    		v1.1h0c-2,0-3.7,1.7-3.7,3.7V23c0,2,1.7,3.7,3.7,3.7h9.8c2,0,3.7-1.7,3.7-3.7v-7.5C26.6,13.4,24.9,11.8,22.9,11.8z M13.1,14.3h9.8
+                                    		c0.6,0,1.1,0.5,1.1,1.1H12C12,14.8,12.5,14.3,13.1,14.3z M22.9,24.1h-9.8c-0.6,0-1.2-0.5-1.2-1.2v-5.8H24V23
+                                    		C24,23.6,23.5,24.1,22.9,24.1z"/>
+                                    	<path class="Fill(XII)" d="M14.4,18.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9C15.4,18.7,14.9,18.3,14.4,18.3z"/>
+                                    	<path class="Fill(XII)" d="M18,18.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9C18.9,18.7,18.5,18.3,18,18.3z"/>
+                                    	<path class="Fill(XII)" d="M21.6,18.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9C22.5,18.7,22.1,18.3,21.6,18.3z"/>
+                                    	<path class="Fill(XII)" d="M14.4,21.1c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9S14.9,21.1,14.4,21.1z"/>
+                                    	<path class="Fill(XII)" d="M18,21.1c-0.5,0-0.9,0.4-0.9,0.9S17.5,23,18,23s0.9-0.4,0.9-0.9S18.5,21.1,18,21.1z"/>
+                                     </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="containerToWatch">
+                <form id="formRetrieve" style="display: none;">
+                    <h3>Retrieve Records</h3>
+                    <div class="form-group">
+                        <input type="hidden" name="action" value="retrieve_1">
+                        <input class="btn btn-warning" id="btnRetrieve" type="submit" value="Retrieve" />
+                    </div>
+                </form>
+            </div>
+
+            <main id="datatable" class="mainApp mainApp-list row no-gutters"></main>
+
+            <div id="messageRetrieve"></div>
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div class="navbar--button">
+                        <a href="/film.html">
+                            <div class="navbar--icon">
+                                <div class="svg">
+                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                        <path class="Fill(XII)" d="M27,17.6l-8.4-4.7c0,0-0.1,0-0.1,0c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0.1
+                                    		c0,0-0.1,0-0.1,0L9,17.6c-0.5,0.3-0.7,1-0.4,1.5c0.2,0.4,0.6,0.6,1,0.6c0.2,0,0.4,0,0.5-0.1l1.1-0.6v3.2c0,0.6,0.5,1.1,1.1,1.1
+                                    		s1.1-0.5,1.1-1.1v-4.4l4.6-2.6l4.6,2.6v4.4c0,0.6,0.5,1.1,1.1,1.1s1.1-0.5,1.1-1.1v-3.2l1.1,0.6c0.2,0.1,0.4,0.1,0.5,0.1
+                                    		c0.4,0,0.8-0.2,1-0.6C27.7,18.6,27.5,17.9,27,17.6z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="navbar--caption">
+                                Home
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar--button">
+                        <a href="/film-watchlist.html">
+                            <div class="navbar--icon">
+                                <div class="svg">
+                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                            			<path class="Fill(XII)" d="M18,26.3c-4.6,0-8.3-3.7-8.3-8.3s3.7-8.3,8.3-8.3s8.3,3.7,8.3,8.3S22.6,26.3,18,26.3z M18,11.7c-3.5,0-6.3,2.8-6.3,6.3
+                            				c0,3.5,2.8,6.3,6.3,6.3c3.5,0,6.3-2.8,6.3-6.3C24.3,14.5,21.5,11.7,18,11.7z"/>
+                            			<path class="Fill(XII)" d="M18,15.2c-0.1,0-0.3,0-0.4,0c0.2,0.2,0.3,0.5,0.3,0.8c0,0.7-0.6,1.2-1.2,1.2c-0.5,0-0.9-0.3-1.1-0.6
+                            				c-0.2,0.4-0.4,0.9-0.4,1.4c0,1.6,1.3,2.8,2.8,2.8s2.8-1.3,2.8-2.8S19.6,15.2,18,15.2z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="navbar--caption">
+                                Watchlist
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar--button">
+                        <a href="/film-watched.html">
+                            <div class="navbar--icon">
+                                <div class="svg">
+                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                        <path class="Fill(XII)" d="M24.8,15.2c-0.5,0.1-0.9,0.7-0.7,1.2c0.1,0.5,0.2,1.1,0.2,1.6c0,3.5-2.8,6.3-6.3,6.3c-1.3,0-2.5-0.4-3.6-1.1l2.5-2.5
+                                    		c0.3,0.1,0.7,0.2,1.1,0.2c1.6,0,2.8-1.3,2.8-2.8c0-0.4-0.1-0.7-0.2-1.1l5.4-5.4c0.4-0.4,0.4-1.1,0-1.6c-0.4-0.4-1.1-0.4-1.6,0
+                                    		L23,11.4c-1.4-1.1-3.2-1.7-5-1.7c-4.6,0-8.3,3.7-8.3,8.3c0,0.7,0.1,1.4,0.3,2.1c0.1,0.4,0.5,0.7,1,0.7c0.1,0,0.2,0,0.3,0
+                                    		c0.5-0.1,0.9-0.7,0.7-1.2c-0.1-0.5-0.2-1.1-0.2-1.6c0-3.5,2.8-6.3,6.3-6.3c1.3,0,2.5,0.4,3.6,1.1l-2.5,2.5
+                                    		c-0.3-0.1-0.7-0.2-1.1-0.2c-0.1,0-0.3,0-0.4,0c0.2,0.2,0.3,0.5,0.3,0.8c0,0.7-0.6,1.2-1.2,1.2c-0.5,0-0.9-0.3-1.1-0.6
+                                    		c-0.2,0.4-0.4,0.9-0.4,1.4c0,0.4,0.1,0.7,0.2,1.1l-5.4,5.4c-0.4,0.4-0.4,1.1,0,1.6c0.2,0.2,0.5,0.3,0.8,0.3s0.6-0.1,0.8-0.3
+                                    		l1.5-1.5c1.4,1.1,3.2,1.7,5,1.7c4.6,0,8.3-3.7,8.3-8.3c0-0.7-0.1-1.4-0.3-2.1C25.9,15.4,25.3,15,24.8,15.2z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="navbar--caption">
+                                Watched
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar--button active">
+                        <a href="/film-rewatch.html">
+                            <div class="navbar--icon">
+                                <div class="svg">
+                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                        <path class="Fill(XII)" d="M18,9.7c-4.6,0-8.3,3.7-8.3,8.3c0,2.9,1.5,5.5,3.9,7c0.2,0.1,0.3,0.2,0.5,0.2c0.3,0,0.7-0.2,0.8-0.5
+                                			c0.3-0.5,0.1-1.1-0.3-1.4c-1.9-1.2-3-3.2-3-5.3c0-3.5,2.8-6.3,6.3-6.3c3.5,0,6.3,2.8,6.3,6.3c0,1.7-0.7,3.3-1.8,4.4
+                                			c-0.4,0.4-0.4,1,0,1.4s1,0.4,1.4,0c1.6-1.6,2.4-3.6,2.4-5.9C26.3,13.4,22.6,9.7,18,9.7z"/>
+                                		<path class="Fill(XII)" d="M18,15.2c-0.1,0-0.3,0-0.4,0c0.2,0.2,0.3,0.5,0.3,0.8c0,0.7-0.6,1.2-1.2,1.2c-0.5,0-0.9-0.3-1.1-0.6
+                                			c-0.2,0.4-0.4,0.9-0.4,1.4c0,1.6,1.3,2.8,2.8,2.8s2.8-1.3,2.8-2.8S19.6,15.2,18,15.2z"/>
+                                        <path class="Fill(XII)" d="M15,21.4l1.6,3.8c0.1,0.3-0.1,0.7-0.4,0.7L12.1,26c-0.4,0-0.6-0.4-0.4-0.7l2.5-3.9C14.4,21,14.9,21.1,15,21.4z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="navbar--caption">
+                                Rewatch
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="modal micromodal-slide" id="modalWatchlist" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modalWatchlist-title">
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modalWatchlist-title">
+
+                        </h2>
+                        <button class="modal__close" id="modalWatchlist-close" aria-label="Close modal">
+                            <div class="svg">
+                                <svg version="1.1" class="svg--element" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                    <path class="Fill(XII)" d="M12.8,10l3.8-3.8c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L10,7.2L6.2,3.3c-0.8-0.8-2-0.8-2.8,0
+                                        c-0.8,0.8-0.8,2,0,2.8L7.2,10l-3.8,3.8c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.8-3.8l3.8,3.8
+                                        c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L12.8,10z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </header>
+                    <div class="modal__content" id="modalWatchlist-content">
+                        <div class="formModal">
+                            <form id="formUpdate" class="row">
+                                <div class="form-group col-12">
+                                  <label>TID</label>
+                                  <input class="form-control" name="tid" type="text" id="tid">
+                                </div>
+                                <div class="form-group col-12">
+                                  <label>Movie ID</label>
+                                  <input class="form-control" name="movie_id" type="text" id="movie_id">
+                                </div>
+                                <div class="form-group col-12">
+                                  <label>Title</label>
+                                  <input class="form-control" name="title" type="text" id="title">
+                                </div>
+                                <div class="form-group col-12">
+                                  <label>Poster URL</label>
+                                  <input class="form-control" name="poster_path" type="text" id="poster_path" >
+                                </div>
+                                <div class="form-group col-12">
+                                  <label>Watched</label>
+                                  <input class="form-control" name="watched" type="text" id="watched" >
+                                </div>
+                                <div class="form-group col-12">
+                                  <label>Link</label>
+                                  <input class="form-control" name="link" type="text" id="link" >
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+                                        <input type="hidden" name="action" value="update_1">
+                                        <input class="button button-watchlist" type="submit" value="Aggiorna Rewatch" />
+                                        <div id="resultSubmit" class="">
+                                            <div class="svg" title="0">
+                                                <svg version="1.1" class="svg--element" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                                    <path class="Fill(XVI)" opacity="0.5" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                                                    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                                                    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                                                    <path class="Fill(XXVI)" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                                                    C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <footer class="modal__footer" id="modalWatchlist-footer">
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal micromodal-slide" id="modalRewatch" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modalRewatch-title">
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modalRewatch-title">
+
+                        </h2>
+                        <button class="modal__close" id="modalRewatch-close" aria-label="Close modal">
+                            <div class="svg">
+                                <svg version="1.1" class="svg--element" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                    <path class="Fill(XII)" d="M12.8,10l3.8-3.8c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L10,7.2L6.2,3.3c-0.8-0.8-2-0.8-2.8,0
+                                        c-0.8,0.8-0.8,2,0,2.8L7.2,10l-3.8,3.8c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.8-3.8l3.8,3.8
+                                        c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L12.8,10z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </header>
+                    <div class="modal__content" id="modalRewatch-content">
+                        <div class="formModal">
+                            <form id="formDelete" class="row">
+                                <div class="form-group col-12 d-none">
+                                    <label>TID</label>
+                                    <input id="d_tid" class="form-control" name="tid" type="text" >
+                                </div>
+                                <div class="form-group col-12 d-none">
+                                    <label>Movie ID</label>
+                                    <input id="d_movie_id" class="form-control" name="movie_id" type="text" >
+                                </div>
+                                <div class="form-group col-12 d-none">
+                                    <label>Title</label>
+                                    <input id="d_title" class="form-control" name="title" type="text" >
+                                </div>
+                                <div class="form-group col-12 d-none">
+                                    <label>Poster URL</label>
+                                    <input id="d_poster_path" class="form-control" name="poster_path" type="text" >
+                                </div>
+                                <div class="form-group col-12 d-none">
+                                    <label>Watched</label>
+                                    <input id="d_watched" class="form-control" name="watched" type="text" >
+                                </div>
+                                <div class="form-group col-12 d-none">
+                                    <label>Inserisci link (facoltativo)</label>
+                                    <input id="d_link" class="form-control" name="link" type="text" >
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+                                        <input type="hidden" name="action" value="delete_1">
+                                        <input type="submit" value="Cancella da Rewatch" class="button button-watched" />
+                                        <div id="modalRewatchResultSubmit" class="">
+                                            <div class="svg" title="0">
+                                                <svg version="1.1" class="svg--element" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                                    <path class="Fill(XVI)" opacity="0.5" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                                                    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                                                    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                                                    <path class="Fill(XXVI)" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                                                    C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p id="result"></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <footer class="modal__footer" id="modalRewatch-footer">
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
+
+        <script src="assets/js/film-rewatch.min.js"></script>
+    </body>
+</html>
