@@ -152,6 +152,14 @@
 
         </div>
 
+        <script type="text/javascript">
+            window.addEventListener("load", () => {
+                if ("serviceWorker" in navigator) {
+                    navigator.serviceWorker.register("./sw.js");
+                }
+            });
+        </script>
+
         <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
 
     </body>
