@@ -24,34 +24,30 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <link rel="stylesheet" type="text/css" href="./assets/css/frontend.min.css">
-
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;700&family=Fjalla+One&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-
         <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-T9R8Q37');</script>
+        })(window,document,'script','dataLayer','GTM-WLG4R5V');</script> -->
         <!-- End Google Tag Manager -->
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9R8Q37"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLG4R5V"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
         <!-- End Google Tag Manager (noscript) -->
-        <div class="canvasArea">
+        <div class="canvasArea" data-simplebar>
             <header class="header">
                 <nav class="header-navigation">
                     <ul>
-                        <li class="active"><a href="./film.html">Film</a></li>
-                        <li><a class="generatorMenu" href="./serie.html">Serie</a></li>
+                        <li class="active"><a href="/film.html">Film</a></li>
+                        <li><a class="generatorMenu" href="/serie.html">Serie</a></li>
                     </ul>
                     <a id="darkMode" class="header--themeMode" href="javascript:void(0);">
-
                         <div class="svg">
                             <svg class="svg--element lightMode" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
                                 <path class="Fill(XII)" d="M32.5,19.8c7,0,12.7,5.7,12.7,12.7s-5.7,12.7-12.7,12.7s-12.7-5.7-12.7-12.7S25.5,19.8,32.5,19.8
@@ -69,7 +65,6 @@
                                 <path class="Fill(XII)" d="M49.6,18.4c-0.8,0-1.5-0.3-2.1-0.9c-1.2-1.2-1.2-3.1,0-4.2l2.1-2.1c1.2-1.2,3.1-1.2,4.2,0
                                     c1.2,1.2,1.2,3.1,0,4.2l-2.1,2.1C51.1,18.1,50.4,18.4,49.6,18.4z"/>
                             </svg>
-
                             <svg version="1.1" class="svg--element darkMode" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
                                 <path class="Fill(XII)" d="M53.5,12.4h-1.8v-1.8c0-0.9-0.7-1.6-1.6-1.6s-1.6,0.7-1.6,1.6v1.8h-1.8c-0.9,0-1.6,0.7-1.6,1.6
                                     s0.7,1.6,1.6,1.6h1.8v1.8c0,0.9,0.7,1.6,1.6,1.6s1.6-0.7,1.6-1.6v-1.8h1.8c0.9,0,1.6-0.7,1.6-1.6S54.4,12.4,53.5,12.4z"/>
@@ -81,11 +76,19 @@
                                     c0.7,5.8,5.4,10.5,11.1,11.2c4.7,0.6,9.2-1.4,11.9-5C33,39.8,25.1,31.8,24.8,22z"/>
                             </svg>
                         </div>
-
                     </a>
+                    <button id="logout" class="inner" type="button" name="button" style="display:none;">
+                        <div class="svg">
+                            <svg class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                <path class="Fill(XII)" d="M32.5,51.5c-10.4,0-18.9-8.5-18.9-18.9c0-4.6,1.7-9.1,4.8-12.5c1.1-1.2,3-1.4,4.2-0.3c1.2,1.1,1.4,3,0.3,4.2
+                                    c-2.1,2.4-3.2,5.4-3.2,8.5c0,7.1,5.8,12.9,12.9,12.9c7.1,0,12.9-5.8,12.9-12.9c0-3.2-1.2-6.2-3.2-8.5c-1.1-1.2-1-3.1,0.3-4.2
+                                    c1.2-1.1,3.1-1,4.2,0.3c3.1,3.5,4.8,7.9,4.8,12.5C51.4,43,42.9,51.5,32.5,51.5z"/>
+                                <path class="Fill(XII)" d="M32.5,29.6c-1.7,0-3-1.3-3-3V13.9c0-1.7,1.3-3,3-3c1.7,0,3,1.3,3,3v12.7C35.5,28.3,34.2,29.6,32.5,29.6z"/>
+                            </svg>
+                        </div>
+                    </button>
                 </nav>
             </header>
-
             <section class="filter">
                 <div class="row">
                     <div class="col-12">
@@ -112,14 +115,12 @@
                                 		<path class="Fill(XII)" d="M26,23.2H15.6c-0.4-0.7-1.2-1.2-2.1-1.2s-1.7,0.5-2.1,1.2H10c-0.7,0-1.3,0.6-1.3,1.3s0.6,1.3,1.3,1.3h1.4
                                 			c0.4,0.7,1.2,1.2,2.1,1.2s1.7-0.5,2.1-1.2H26c0.7,0,1.3-0.6,1.3-1.3S26.7,23.2,26,23.2z"/>
                                     </svg>
-
                                 </div>
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
-
             <div class="modal micromodal-slide" id="modalTags" aria-hidden="true">
                 <div class="modal__overlay" tabindex="-1" data-micromodal-close>
                     <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modalTags-title">
@@ -145,19 +146,372 @@
                     </div>
                 </div>
             </div>
-
             <div id="containerToWatch">
-                <form id="formRetrieve" style="display: none;">
+                <form id="formRetrieve_watchlist" style="display: none;">
                     <h3>Retrieve Records</h3>
                     <div class="form-group">
-                        <input type="hidden" name="action" value="retrieve">
-                        <input class="btn btn-warning" id="btnRetrieve" type="submit" value="Retrieve" />
+                        <input type="hidden" name="action" value="retrieve_1">
+                        <input class="btn btn-warning" id="btnRetrieve_watchlist" type="submit" value="Retrieve" />
+                    </div>
+                </form>
+                <form id="formRetrieve_watched" style="display: none;">
+                    <h3>Retrieve Records</h3>
+                    <div class="form-group">
+                        <input type="hidden" name="action" value="retrieve_2">
+                        <input class="btn btn-warning" id="btnRetrieve_watched" type="submit" value="Retrieve" />
+                    </div>
+                </form>
+                <form id="formRetrieve_rewatch" style="display: none;">
+                    <h3>Retrieve Records</h3>
+                    <div class="form-group">
+                        <input type="hidden" name="action" value="retrieve_3">
+                        <input class="btn btn-warning" id="btnRetrieve_rewatch" type="submit" value="Retrieve" />
                     </div>
                 </form>
             </div>
-
-            <main id="main" class="mainApp row no-gutters"></main>
-
+            <main id="main" class="mainApp row no-gutters">
+                <div id="skeleton" class="col-12">
+                    <div class="row no-gutters">
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainWrapper col-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="movie skeleton">
+                                <div class="movie--content">
+                                    <div class="skeletonImg">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XXVVI)" d="M56.3,45l-8.7-10.5c-1.4-1.6-3.9-1.6-5.2,0l-2.7,3.2l-9.8-11.7c-1.4-1.7-4-1.7-5.5,0L8.8,44.9c-1.9,2.3-0.3,5.8,2.7,5.8
+                                                h31.3c0.3,0,0.5,0,0.7-0.1h10.1C56.5,50.6,58.1,47.2,56.3,45z"/>
+                                                <circle class="Fill(XXVVI)" cx="40.2" cy="20.7" r="6.3"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper">
+                                        <button class="addMovieBtn">
+                                            <div class="addMovieBtn--icon">
+                                                <div class="svg">
+                                                    <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                                                        <path d="M23.2,16.5h-3.8v-3.8c0-0.8-0.7-1.5-1.5-1.5s-1.5,0.7-1.5,1.5v3.7h-3.7c-0.8,0-1.5,0.7-1.5,1.5s0.7,1.5,1.5,1.5h3.7v3.8
+                                                        c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5l0,0v-3.8h3.8c0.8,0,1.5-0.7,1.5-1.5S24,16.5,23.2,16.5L23.2,16.5z"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="movie--placeholder"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div id="messageRetrieve"></div>
             <div class="pagination">
                 <div class="page" id="prev">
                     <div class="svg">
@@ -167,11 +521,9 @@
                         </svg>
                     </div>
                 </div>
-
                 <div class="pagination--indicator">
                     <div class="current" id="current">1</div>
                 </div>
-
                 <div class="page" id="next">
                     <div class="svg">
                         <svg version="1.1" class="svg--element" viewBox="0 0 10 10" style="enable-background:new 0 0 10 10;" xml:space="preserve">
@@ -181,14 +533,12 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
         <nav class="navbar">
             <ul>
                 <li>
                     <div class="navbar--button active">
-                        <a href="./film.html">
+                        <a href="/film.html">
                             <div class="navbar--icon">
                                 <div class="svg">
                                     <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
@@ -207,7 +557,7 @@
                 </li>
                 <li>
                     <div class="navbar--button">
-                        <a href="./film-watchlist.html">
+                        <a href="/film-watchlist.html">
                             <div class="navbar--icon">
                                 <div class="svg">
                                     <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
@@ -226,7 +576,7 @@
                 </li>
                 <li>
                     <div class="navbar--button">
-                        <a href="./film-watched.html">
+                        <a href="/film-watched.html">
                             <div class="navbar--icon">
                                 <div class="svg">
                                     <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
@@ -248,7 +598,7 @@
                 </li>
                 <li>
                     <div class="navbar--button">
-                        <a href="./film-rewatch.html">
+                        <a href="/film-rewatch.html">
                             <div class="navbar--icon">
                                 <div class="svg">
                                     <svg version="1.1" class="svg--element" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
@@ -269,13 +619,11 @@
                 </li>
             </ul>
         </nav>
-
         <div class="modal micromodal-slide" id="modalWatchlist" aria-hidden="true">
             <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modalWatchlist-title">
-                    <header class="modal__header">
+                <div class="modal__container modal__container_withSlide" role="dialog" aria-modal="true" aria-labelledby="modalWatchlist-title">
+                    <header class="modal__header Px(15) Px(30)--md">
                         <h2 class="modal__title" id="modalWatchlist-title">
-
                         </h2>
                         <button class="modal__close" id="modalWatchlist-close" aria-label="Close modal">
                             <div class="svg">
@@ -289,52 +637,238 @@
                     </header>
                     <div class="modal__content" id="modalWatchlist-content">
                         <div class="formModal">
-                            <form id="formCreate" class="row" >
-                                <div class="form-group col-12 d-none">
-                                    <label>TID</label>
-                                    <input id="tid" class="form-control" name="tid" type="text" >
+                            <div class="Px(15) Px(30)--md">
+                                <div class="row">
+                                    <div class="form-group col-12">
+                                        <label>Network</label>
+                                        <select id="watchedPlaceholder" class="form-control" name="network">
+                                            <option selected value> </option>
+                                            <option>apple-tv-plus</option>
+                                            <option>disney-plus</option>
+                                            <option>mediaset-infinity</option>
+                                            <option>netflix</option>
+                                            <option>now-tv</option>
+                                            <option>prime-video</option>
+                                            <option>rai-play</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label>Inserisci link</label>
+                                            <input id="linkPlaceholder" class="form-control" name="link" type="text" >
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group col-3 d-none">
-                                    <label>Movie ID</label>
-                                    <input id="movie_id" class="form-control" name="movie_id" type="text" >
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between Px(15) Px(30)--md Mbottom(20)">
+                                <p class=" C(XII)">
+                                    Scegli dove aggiungere
+                                </p>
+                                <div class="arrowSwiper">
+                                    <div class="swiper-button-prev">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                            	<path class="Fill(XII)" d="M55.1,38.8H9.9c-1.2,0-2.3-0.7-2.8-1.9s-0.2-2.4,0.6-3.3L25,16.5c1.2-1.2,3.1-1.2,4.2,0c1.2,1.2,1.2,3.1,0,4.2L17.1,32.8h38c1.7,0,3,1.3,3,3S56.8,38.8,55.1,38.8z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <div class="svg">
+                                            <svg version="1.1" class="svg--element" viewBox="0 0 65 65" style="enable-background:new 0 0 65 65;" xml:space="preserve">
+                                                <path class="Fill(XII)" d="M9.9,26.2h45.2c1.2,0,2.3,0.7,2.8,1.9s0.2,2.4-0.6,3.3L40,48.5c-1.2,1.2-3.1,1.2-4.2,0c-1.2-1.2-1.2-3.1,0-4.2l12.1-12.1h-38c-1.7,0-3-1.3-3-3S8.2,26.2,9.9,26.2z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group col-3 d-none">
-                                    <label>Title</label>
-                                    <input id="title" class="form-control" name="title" type="text" >
-                                </div>
-                                <div class="form-group col-3 d-none">
-                                    <label>Poster URL</label>
-                                    <input id="poster_path" class="form-control" name="poster_path" type="text" >
-                                </div>
-                                <div class="form-group col-3 d-none">
-                                    <label>Watched</label>
-                                    <input id="watched" class="form-control" name="watched" type="text" >
-                                </div>
-                                <div class="form-group col-12">
-                                    <label>Inserisci link (facoltativo)</label>
-                                    <input id="link" class="form-control" name="link" type="text" >
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex align-items-center">
-                                        <input type="hidden" name="action" value="create">
-                                        <input type="submit" value="Aggiungi a Watchlist" class="button button-watchlist" />
-                                        <div id="resultSubmit" class="">
-                                            <div class="svg" title="0">
-                                                <svg version="1.1" class="svg--element" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-                                                    <path class="Fill(XVI)" opacity="0.5" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
-                                                    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
-                                                    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
-                                                    <path class="Fill(XXV)" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
-                                                    C22.32,8.481,24.301,9.057,26.013,10.047z">
-                                                    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
-                                                    </path>
-                                                </svg>
+                            </div>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column Px(15) Px(30)--md">
+                                            <div class="">
+                                                <form id="formCreate_watchlist" class="row" >
+                                                    <div class="form-group col-12 d-none">
+                                                        <label>TID</label>
+                                                        <input id="tid" class="form-control" name="tid" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Movie ID</label>
+                                                        <input id="movie_id" class="form-control" name="movie_id" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Title</label>
+                                                        <input id="title" class="form-control" name="title" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Poster URL</label>
+                                                        <input id="poster_path" class="form-control" name="poster_path" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Network</label>
+                                                        <select id="watched" class="form-control" name="network">
+                                                            <option selected value> </option>
+                                                            <option>apple-tv-plus</option>
+                                                            <option>disney-plus</option>
+                                                            <option>mediaset-infinity</option>
+                                                            <option>netflix</option>
+                                                            <option>now-tv</option>
+                                                            <option>prime-video</option>
+                                                            <option>rai-play</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 d-none">
+                                                        <label>Inserisci link</label>
+                                                        <input id="link" class="form-control" name="link" type="text" >
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="hidden" name="action" value="create_1">
+                                                            <input type="submit" value="Aggiungi a Watchlist" class="button button-watchlist-index" />
+                                                            <div id="resultSubmit_watchlist" class="resultSubmit">
+                                                                <div class="svg" title="0">
+                                                                    <svg version="1.1" class="svg--element" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                                                        <path class="Fill(XVI)" opacity="0.5" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                                                                        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                                                                        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                                                                        <path class="Fill(XXV)" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                                                                        C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p id="result_watchlist"></p>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
-                                    <p id="result"></p>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column Px(15) Px(30)--md">
+                                            <div class="">
+                                                <form id="formCreate_watched" class="row" >
+                                                    <div class="form-group col-12 d-none">
+                                                        <label>TID</label>
+                                                        <input id="tid_watched" class="form-control" name="tid" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Movie ID</label>
+                                                        <input id="movie_id_watched" class="form-control" name="movie_id" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Title</label>
+                                                        <input id="title_watched" class="form-control" name="title" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Poster URL</label>
+                                                        <input id="poster_path_watched" class="form-control" name="poster_path" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Network</label>
+                                                        <select id="watched_watched" class="form-control" name="network">
+                                                            <option selected value> </option>
+                                                            <option>apple-tv-plus</option>
+                                                            <option>disney-plus</option>
+                                                            <option>mediaset-infinity</option>
+                                                            <option>netflix</option>
+                                                            <option>now-tv</option>
+                                                            <option>prime-video</option>
+                                                            <option>rai-play</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 d-none">
+                                                        <label>Inserisci link</label>
+                                                        <input id="link_watched" class="form-control" name="link" type="text" >
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="hidden" name="action" value="create_2">
+                                                            <input type="submit" value="Aggiungi a Watched" class="button button-watched-index" />
+                                                            <div id="resultSubmit_watched" class="resultSubmit">
+                                                                <div class="svg" title="0">
+                                                                    <svg version="1.1" class="svg--element" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                                                        <path class="Fill(XVI)" opacity="0.5" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                                                                        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                                                                        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                                                                        <path class="Fill(XXVI)" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                                                                        C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p id="result_watched"></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex flex-column Px(15) Px(30)--md">
+                                            <div class="">
+                                                <form id="formCreate_rewatch" class="row" >
+                                                    <div class="form-group col-12 d-none">
+                                                        <label>TID</label>
+                                                        <input id="tid_rewatch" class="form-control" name="tid" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Movie ID</label>
+                                                        <input id="movie_id_rewatch" class="form-control" name="movie_id" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Title</label>
+                                                        <input id="title_rewatch" class="form-control" name="title" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Poster URL</label>
+                                                        <input id="poster_path_rewatch" class="form-control" name="poster_path" type="text" >
+                                                    </div>
+                                                    <div class="form-group col-3 d-none">
+                                                        <label>Network</label>
+                                                        <select id="watched_rewatch" class="form-control" name="network">
+                                                            <option selected value> </option>
+                                                            <option>apple-tv-plus</option>
+                                                            <option>disney-plus</option>
+                                                            <option>mediaset-infinity</option>
+                                                            <option>netflix</option>
+                                                            <option>now-tv</option>
+                                                            <option>prime-video</option>
+                                                            <option>rai-play</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-12 d-none">
+                                                        <label>Inserisci link</label>
+                                                        <input id="link_rewatch" class="form-control" name="link" type="text" >
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="hidden" name="action" value="create_3">
+                                                            <input type="submit" value="Aggiungi a Rewatch" class="button button-rewatch-index" />
+                                                            <div id="resultSubmit_rewatch" class="resultSubmit">
+                                                                <div class="svg" title="0">
+                                                                    <svg version="1.1" class="svg--element" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                                                        <path class="Fill(XVI)" opacity="0.5" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                                                                        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                                                                        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                                                                        <path class="Fill(XII)" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                                                                        C22.32,8.481,24.301,9.057,26.013,10.047z">
+                                                                        <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"/>
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p id="result_rewatch"></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
                     </div>
                     <footer class="modal__footer" id="modalWatchlist-footer">
@@ -342,17 +876,76 @@
                 </div>
             </div>
         </div>
-
+        <div class="modal micromodal-slide" id="modalLogout" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modalLogout-title">
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modalLogout-title">
+                            Logout
+                        </h2>
+                        <button class="modal__close" id="modalLogout-close" aria-label="Close modal">
+                            <div class="svg">
+                                <svg version="1.1" class="svg--element" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                    <path class="Fill(XII)" d="M12.8,10l3.8-3.8c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L10,7.2L6.2,3.3c-0.8-0.8-2-0.8-2.8,0
+                                        c-0.8,0.8-0.8,2,0,2.8L7.2,10l-3.8,3.8c-0.8,0.8-0.8,2,0,2.8c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.8-3.8l3.8,3.8
+                                        c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8L12.8,10z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </header>
+                    <div class="modal__content" id="modalLogout-content">
+                        <div class="warn">
+                            <div class="svg">
+                                <svg version="1.1" class="svg--element" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+                        			<path d="M47.7,47.8H12.3c-1.2,0-2.3-0.7-2.8-1.7c-0.5-1-0.5-2.3,0.2-3.3l17.6-29.2c1.3-1.9,4.2-1.8,5.4-0.1l17.7,29.3
+                    				c0.6,0.9,0.7,2.2,0.2,3.2C50,47.2,48.9,47.8,47.7,47.8z M30,14.3c-0.4,0-0.7,0.2-1,0.5L11.4,44c-0.3,0.4-0.3,0.8-0.1,1.1
+                    				c0.1,0.2,0.4,0.6,0.9,0.6h35.5c0.4,0,0.8-0.2,0.9-0.6c0.2-0.4,0.2-0.8-0.1-1.1L30.9,14.7C30.7,14.5,30.4,14.3,30,14.3z"></path>
+                    				<path d="M30,24.2L30,24.2c0.7,0,1.2,0.5,1.2,1.2V34c0,0.7-0.6,1.3-1.3,1.3h0c-0.6,0-1.1-0.5-1.1-1.1v-8.8
+                    					C28.8,24.7,29.3,24.2,30,24.2z"></path>
+                    				<circle cx="30" cy="38.7" r="1.8"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="C(XII) Ta(center) Fw(700) Maw(350) Mx(auto) Mbottom(30)">
+                            Attenzione, continuando chiuderai la sessione e e dovrai rieffettuare il login
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between Mx(auto) W(100%) Maw(250)">
+                            <button id="modalLogout-cancel" class="button button-secondary" type="button" name="button">
+                                Annulla
+                            </button>
+                            <button id="modalLogout-logout" class="button button-del" type="button" name="button">
+                                Esci
+                            </button>
+                        </div>
+                    </div>
+                    <footer class="modal__footer" id="modalLogout-footer">
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
+        <script src="assets/js/film.min.js"></script>
         <script type="text/javascript">
-            window.addEventListener("load", () => {
-                if ("serviceWorker" in navigator) {
-                    navigator.serviceWorker.register("./sw.js");
-                }
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                noSwipingSelector: 'select',
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            swiper.on('touchStart', function () {
+                console.log('slide changed');
+                $(".modal__overlay").removeAttr('data-micromodal-close');
+            });
+            swiper.on('transitionEnd', function () {
+                console.log('slide changed');
+                $(".modal__overlay").attr('data-micromodal-close', '');
             });
         </script>
-
-        <script type="text/javascript" src="./assets/js/frontend.min.js"></script>
-
-        <script src="assets/js/film.min.js"></script>
     </body>
 </html>
