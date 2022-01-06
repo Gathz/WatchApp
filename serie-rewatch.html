@@ -826,11 +826,19 @@
                                 </div>
                                 <div class="form-group col-6">
                                   <label>Stagione</label>
-                                  <input class="form-control" name="season" type="text" id="season" >
+                                  <div class="number-input">
+                                      <input class="form-control" name="season" type="number" id="season" >
+                                      <div class="numberButton numberButton--up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" ></div>
+                                      <div class="numberButton numberButton--down plus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></div>
+                                  </div>
                                 </div>
                                 <div class="form-group col-6">
                                   <label>Episodio</label>
-                                  <input class="form-control" name="episode" type="text" id="episode" >
+                                  <div class="number-input">
+                                      <input class="form-control" name="episode" type="number" id="episode" >
+                                      <div class="numberButton numberButton--up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" ></div>
+                                      <div class="numberButton numberButton--down plus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></div>
+                                  </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="d-flex align-items-center">
